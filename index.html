@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Current Weather</title>
-	 <meta charset="utf-8">
+	  <title>Current Weather</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,39 +12,41 @@
   <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src = "script.js"></script>
  
 </head>
 
-<body background="asd.jpg">
-<div class ='container'>
+<body >
+  <div class ='container'>
 	<div class='section-1'>
-    <h2>Weather App </h2><hr style="color: red">
-  </div>
-  <div class='section-2'>
-   <p class="fa fa-map-marker map" style="font-size:22px" >
-   <span class='place'style="text-align: center"> Location,Country</span></p>
-    
+            <h1> WEATHER APP</h1><hr>
+        </div>
 
+  <div class='section-2'>
+    <p class="fa fa-map-marker map"  >
+        <b> <span class='place'> Location,Country</span></b>
+    </p>
   </div>
+
   <div class='section-3'>
-   <p class="fa fa-thermometer-half cel" style="font-size:20px"> Temperature :
-   <span class = 'temp'>value</span> celcius </p>
-  <!-- <p id = "#tempf">value</p>     -->
-  
+       <p class="fa fa-thermometer-half cel" > 
+       	  <b>Temp. :<span class = 'temp'>value</span>  &#8451;</b>
+       </p>
+       <!-- <p id = "#tempf">value</p>     -->
   </div>
+
   <div class='section-4'>
-  	<div ><p>   </p>
-  <img  class='image' alt="loading" src="" align="left"></div>
-  <p> <span class='condition'>Loading...</span> </p>
-   <p>( <span class='description'>Loading...</span> )</p>
-   <p>Wind speed :
-   	<span class='wind'>Loading...</span> m/s</p>
-  <p>Pressure : <span class='pressure'>Loading...</span> hpa</p>
- 
-   <p>Humidity : <span class='humidity'>Loading... </span> %</p>
-  
- 
-</div>
+  	    <div ><p>   </p>
+           <img  class='image' align="left">
+        </div>
+           <p> <span class='condition'></span> </p>
+           <p>( <span class='description'>Loading...</span> )</p>
+           <p>Wind speed :<span class='wind'>Loading...</span> m/s</p>
+           <p>Pressure : <span class='pressure'>Loading...</span> hpa</p>
+           <p>Humidity : <span class='humidity'>Loading... </span> %</p>
+  </div>
 </body>
+
 </html>
