@@ -6,12 +6,12 @@ $(document).ready(function(){
     function operation(lat, lon){
 
 	
-	var api = 'http://api.openweathermap.org/data/2.5/weather?lat=' +
+	var api = 'https://api.openweathermap.org/data/2.5/weather?lat=' +
     lat + '&lon=' + lon + '&appid=d3cddc39c8389212f004085ec4ba3be8';
 
     	$.getJSON(api, function(json){
         	var t = json.main.temp;
-		var img_url = 'http://api.openweathermap.org/img/w/'+json.weather[0].icon +'.png';
+		var img_url = 'https://api.openweathermap.org/img/w/'+json.weather[0].icon +'.png';
         	$(".temp").html(Math.floor(t - 273));
         	//$("#tempf").{setTemp(Math.floor(json.main.temp - 273))};
         	$(".wind").html(json.wind.speed);
